@@ -1,0 +1,14 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&family=Roboto+Flex:opsz@8..144&display=swap');
+
+  *{
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 3em;
+    font-family:'Montserrat', sans-serif;
+    color:blue;
+  }
+  

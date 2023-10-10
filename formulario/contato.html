@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header class="cabecalho">
+
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="index.html">Home</a></li>
+            <a class="cabecalho__menu__link" href="about.html">Sobre mim</a></li>
+            <a class="cabecalho__menu__link" href="contato.html">Contato</a></li>
+        </nav>
+
+    </header> 
+    <main class="apresentacao">
+        
+        <section class="apresentacao__conteudo">
+            <h1 class="apresentacao__conteudo__titulo">Deixe aqui sua a mensagem</h1>
+            <h2 class="apresentacao__conteudo__subtitulo">Entre em contato pelo nosso formulário</h2>
+            <form>
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" placeholder="Digite nome" name="nome" required>
+                    <br/>
+                </div>
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" placeholder="Digite seu e-mail." name="email" required>
+                    <br/>
+                </div>
+                <div>
+                    <label for="mensagem">Mensagem:</label>
+                    <br/>
+                    <textarea rows="8" name="msg"></textarea>
+                </div>
+                <div class="inputbottom">
+                    <input type="submit" value="Enviar">
+                </div>
+
+            </form>
+        </section>
+        <img class="apresentacao__imagem" src="./img/mensagem.jpg" alt="imagem de um menino escrevendo uma mensagem">
+    </main>
+    <footer class="rodape">
+        <p>&copy; 2023 - by Jeice Santos</p>
+    </footer>
+</body>
+</html>

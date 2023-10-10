@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&family=Roboto+Flex:opsz@8..144&display=swap');
+
+/* Declarar as variáveis de cores e fontes */
+:root {
+    --cor-primaria: #000000; /* Cor primária (preto) */
+    --cor-secundaria: #F6F6F6;/* Cor secundária (branco) */
+    --cor-terciaria: #22D4FD;/* Cor terciária (azul) */
+    --cor-hover: #272727;/* Cor do efeito hover (cinza escuro) */
+
+    --fonte-primaria: 'Krona One', sans-serif;/* Fonte principal (Krona One) */
+    --fonte-secundaria: 'Montserrat', sans-serif;/* Fonte secundária (Montserrat) */
+}
+
+/* Reset de margens e preenchimentos padrão para evitar qualquer espaçamento indesejado */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para o corpo da página */
+body {
+    box-sizing: border-box; /* Garante que a caixa de modelo inclua bordas e preenchimento */
+    background-color: #000000; /* Cor de fundo (preto)*/
+    color: #F6F6F6; /* Cor do texto */
+}
+
+/* Estilos para o cabeçalho (menu) */
+.cabecalho {
+    padding: 2% 0% 0% 15%; /* Espaçamento do topo, direita, baixo e esquerda */
+    border-bottom: 2px solid #22D4FD;
+}
+
+/* Estilos para o menu no cabeçalho */
+.cabecalho__menu {
+    display: flex; /* Torna os itens flexíveis (em linha) */
+    gap: 80px; /* Espaçamento entre os itens */
+    padding: 2px;
+}
+
+/* Estilos para os links do menu */
+.cabecalho__menu__link {
+    font-family: 'Montserrat', sans-serif; /* Define a fonte para os links */
+    font-size: 1.5rem;/* Tamanho da fonte */
+    font-weight: 600; /* Peso da fonte (negrito) */
+    color: #22D4FD;/* Cor do texto (azul) */
+    text-decoration: none; /* Remove a decoração de sublinhado */
+}
+
+/* Estilos para a seção de apresentação */
+.apresentacao {
+    padding: 5% 15%; /* Espaçamento do topo e direita */
+    display: flex; /* Torna os itens flexíveis (em linha) */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    justify-content: space-between; /* Espaçamento entre os itens */
+    gap: 82px; /* Espaçamento entre os itens */
+}
+
+/* Estilos para o conteúdo dentro da seção de apresentação */
+.apresentacao__conteudo {
+    width: 50%; /* Largura do conteúdo */
+    display: flex; /* Torna os itens flexíveis (em linha) */
+    flex-direction: column; /* Alinha os itens em coluna */
+    gap: 40px; /* Espaçamento entre os itens */
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 2.25rem; /* Tamanho da fonte */
+    font-family: 'Krona One', sans-serif; /* Define a fonte */
+}
+
+.apresentacao__conteudo__subtitulo {
+    color: #22D4FD; /* Cor do texto (azul) */
+    font-family: 'Krona One', sans-serif; /* Define a fonte */
+    font-weight: 400; /* Peso da fonte */
+    font-size: 1.5rem; /* Tamanho da fonte */
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 1.5rem; /* Tamanho da fonte */
+    font-family: var(--fonte-secundaria); /* Usa a fonte secundária definida nas variáveis */
+}
+
+/* Estilos para os links na seção de apresentação */
+.apresentacao__links {
+    display: flex; /* Torna os itens flexíveis (em linha) */
+    flex-direction: column; /* Alinha os itens em coluna */
+    justify-content: space-between; /* Espaçamento entre os itens */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    gap: 32px; /* Espaçamento entre os itens */
+}
+
+.apresentacao__links__navegacao {
+    display: flex;/* Torna os itens flexíveis (em linha) */
+    justify-content: center;/* Centraliza os itens horizontalmente */
+    gap: 16px;/* Espaçamento entre os itens */
+    border: 2px solid #22D4FD;/* Borda dos links */
+    width: 50%;/* Largura dos links */
+    text-align: center;/* Alinha o texto ao centro */
+    border-radius: 8px;/* Borda arredondada */
+    font-size: 1.5rem; /* Tamanho da fonte */
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: #F6F6F6;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.apresentacao__links__navegacao:hover {
+    background-color: #272727;
+}
+
+.apresentacao__imagem {
+    width: 50%;
+}
+
+/* Estilos para o rodapé */
+.rodape {
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+/* Estilos para o formulário */
+form {
+    font-family: 'Montserrat', sans-serif;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-left: 2px;
+}
+
+form input, form textarea {
+    outline: unset;
+    padding: 15px;
+    min-width: 300px;
+    border: 1px solid #22D4FD;
+    border-radius: 5px;
+}
+
+form input:focus, form textarea:focus {
+    background-color: white;
+}
+
+form input[type="submit"] {
+    margin-bottom: 2px;
+    margin-top: 8px;
+    background-color: #22D4FD;
+    color: #F6F6F6;
+    cursor: pointer;
+    font-family: 'Krona One', sans-serif;
+}
+
+/* Estilos para telas menores que 1200 pixels */
+@media (max-width: 1200px){
+    .cabecalho {
+        padding: 10%;/* Reduz o espaçamento no cabeçalho */
+    }
+
+    .cabecalho__menu {
+        justify-content: center;/* Centraliza os itens do menu */
+    }
+
+    .apresentacao {
+        flex-directioncolumn-reverse;
+    }
+    .apresentacao__links__navegacao{
+        display: flex;
+        justify-content: center;/* Centraliza os itens horizontalmente */
+        text-align: center; /* Alinha o texto ao centro */
+        gap:8px;
+        border: 2px solid #22D4FD;
+        width: 50%;
+        padding: 21.5px 0;
+    }
+}

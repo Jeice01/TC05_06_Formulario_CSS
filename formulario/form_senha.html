@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Senha</title>
+</head>
+<body>
+    <h1>Insira a sua senha</h1>
+    <form autocomplete="off" action="cadastro.php" method="get">
+        <div>
+            <label for="inome">Nome:</label>
+            <input placeholder="Digite seu nome" type="text" name="nome" id="inome" required>
+        </div>
+        <div>
+            <label for="iemail">E-mail:</label>
+            <input placeholder="Digite seu e-mail" type="email" name="email" id="iemail" required>
+        </div>
+        <div>
+            <label for="ipwd">Senha:</label>
+            <input placeholder="Digite sua senha" type="password" name="pwd" id="ipwd" required minlength="8" maxlength="10">
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>
